@@ -15,11 +15,11 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
-#hide_menu_style = """
-#        <style>
-        #MainMenu {visibility: display;}
-#        </style>
-#        """
+hide_menu_style = """
+        <style>
+        MainMenu {visibility: hidden;}
+        </style>
+        """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 selected = option_menu(
