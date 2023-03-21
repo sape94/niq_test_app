@@ -12,14 +12,14 @@ import re
 st.set_page_config(
     page_title='NIQ APP | Maps',
     layout='centered',
-    initial_sidebar_state='collapsed'
+    initial_sidebar_state='expanded'
 )
 
-hide_menu_style = """
-        <style>
+#hide_menu_style = """
+#        <style>
         #MainMenu {visibility: display;}
-        </style>
-        """
+#        </style>
+#        """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 selected = option_menu(
