@@ -1,7 +1,6 @@
-streamlit.components.v1
-streamlit_option_menu
-streamlit_extras.switch_page_button
+streamlit-option-menu
+streamlit-extras
+Image
+regex
 pandas
-PIL
-re
 plotly_express
