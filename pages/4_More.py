@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from streamlit.components.v1 import html
 from streamlit_option_menu import option_menu
 from streamlit_extras.switch_page_button import switch_page
 from PIL import Image
