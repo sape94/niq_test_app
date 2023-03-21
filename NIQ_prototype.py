@@ -43,10 +43,6 @@ selected = option_menu(
     }
 )
 
-inno = Image.open('images_main/innovation_message.png')
-
-st.image(inno, use_column_width='always', output_format='PNG')
-
 if selected == 'Home':
     st.write('List of available apps and sub apps.')
 
@@ -63,7 +59,6 @@ if selected == 'More':
     switch_page('More')
 
 #######################################################################
-AIlogo = Image.open('images_main/innovation_logo.png')
 
 ft = """
 <style>
@@ -105,7 +100,7 @@ text-align: left; /* 'left', 'center' or 'right' if you want*/
 <div class="footer">
 <p style='font-size: 0.875em;'>Developed by <a style='display: inline; text-align:
 left;' href="https://github.com/sape94" target="_blank"><img src="https://i.postimg.cc/vBnHmZfF/innovation-logo.png"
-alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team </br></a>.</p>
+alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team.</br></a></p>
 </div>
 
 </div>
