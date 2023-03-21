@@ -4,3 +4,4 @@ Image
 regex
 pandas
 plotly_express
+openpyxl
