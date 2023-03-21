@@ -1,0 +1,6 @@
+streamlit.components.v1
+streamlit_option_menu
+streamlit_extras.switch_page_button
+pandas
+PIL
+re
