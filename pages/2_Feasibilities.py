@@ -21,6 +21,10 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
+image = Image.open('images_main/NIQ_banner.png')
+
+st.image(image, use_column_width='always', output_format='PNG')
+
 selected = option_menu(
     menu_title=None,
     options=['Home', 'Sampling', 'Feasibilities', 'Maps', 'More'],
@@ -39,10 +43,6 @@ selected = option_menu(
                               "font-size": "12px"},
     }
 )
-
-image = Image.open('images_main/NIQ_banner.png')
-
-st.image(image, use_column_width='always', output_format='PNG')
 
 if selected == 'Home':
     switch_page('NIQ prototype')
@@ -101,7 +101,7 @@ text-align: left; /* 'left', 'center' or 'right' if you want*/
 <div class="footer">
 <p style='font-size: 0.875em;'>Developed by <a style='display: inline; text-align:
 left;' href="https://github.com/sape94" target="_blank"><img src="https://i.postimg.cc/vBnHmZfF/innovation-logo.png"
-alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team </br></a>.</p>
+alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team.</br></a></p>
 </div>
 
 </div>
