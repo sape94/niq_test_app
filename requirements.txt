@@ -4,3 +4,4 @@ streamlit_extras.switch_page_button
 pandas
 PIL
 re
+plotly_express
