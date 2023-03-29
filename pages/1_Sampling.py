@@ -235,7 +235,7 @@ if selected == 'Sampling':
 
                     n_s_df = repl_mod.DataFrameReplacer(fulldf=o_df,
                                                         fracdf=sampled_df,
-                                                        sort_col=sort_col).add_sts(est_col=est_col,
+                                                        sort_col=sort_col).add_sts(est_col=filter_list,
                                                                                    rmv_list=rmv_list,
                                                                                    id_rmv=id_rmv)
 
