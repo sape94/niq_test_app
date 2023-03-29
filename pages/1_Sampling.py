@@ -44,7 +44,7 @@ selected = option_menu(
 )
 
 
-@st.cache_data
+@st.cache
 def cache_df(df, p, conf_lev, s_e):
     c_df = samp_mod.SamplingMachine(sample_portion=p,
                                     confidence_level=conf_lev,
