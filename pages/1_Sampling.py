@@ -74,7 +74,7 @@ if selected == 'Sampling':
 
     with st.expander('If you want to upload a Dataframe, expand this section. When you finish you can collapse it again.'):
         st.write(
-            'Upload the CSV or XLSX file that contains the Dataframe with the feasibility information:')
+            'Upload the CSV or XLSX file that contains the working Dataframe:')
         uploaded_file = st.file_uploader("Choose a file",
                                          type=['csv', 'xlsx'],
                                          key='gral_settings_df'
