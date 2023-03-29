@@ -10,7 +10,7 @@ import re
 #######################################################################
 
 st.set_page_config(
-    page_title='NIQ APP | Maps',
+    page_title='NIQ APP | More',
     layout='centered',
     initial_sidebar_state='expanded'
 )
