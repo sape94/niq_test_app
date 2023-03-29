@@ -169,7 +169,7 @@ if selected == 'Sampling':
                                 ('No',
                                  'Yes, with a non-stratified method',
                                  'Yes, with a stratified method',
-                                 'Yes, by parameters method'))
+                                 'Yes, with a parameters method'))
             if samp_ans == 'Yes, with a non-stratified method':
 
                 sampled_df = cache_df(df=o_df, p=p, conf_lev=conf_lev, s_e=s_e)
@@ -205,7 +205,6 @@ if selected == 'Sampling':
 
                     filter_list = st.multiselect(
                         'Select up to three columns by priority to get the structure:', est_col, max_selections=3)
-
                     original_rows = o_df.index.values.tolist()
                     used_rows = sampled_df.index.values.tolist()
                     unused_rows = [item for item in original_rows
@@ -254,7 +253,7 @@ if selected == 'Sampling':
             if samp_ans == 'Yes, with a stratified method':
                 st.write(':arrow_forward: This method is to be implemented soon.')
 
-            if samp_ans == 'Yes, by parameters method':
+            if samp_ans == 'Yes, with a parameters method':
                 st.write(':arrow_forward: This method is to be implemented soon.')
 
     col7, col8 = st.columns([2, 1], gap='medium')
@@ -327,3 +326,4 @@ alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team.
 </div>
 """
 st.write(ft, unsafe_allow_html=True)
+
