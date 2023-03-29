@@ -98,7 +98,7 @@ if selected == 'Sampling':
 
     st.markdown('')
 
-    with st.expander(r'Expandand this section if you know the **sample portion** from previous samples.'):
+    with st.expander(r'Expand this section if you know the **sample portion** from previous samples.'):
         p_100 = st.slider(
             r'Select the sample\'s portion value, $p$, (%):', 0, 100, 50)
         p = int(p_100)
