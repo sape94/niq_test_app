@@ -37,14 +37,99 @@ selected = option_menu(
         "container": {"padding": "0!important",
                       "background-color": "#fafafa"},
         "icon": {"color": "#31d1ff", "font-size": "15px"},
-        "nav-link": {"color": "#31333F", "font-size": "15px", "text-align": "centered",
+        "nav-link": {"color": "#31333F", "font-size": "15px",
+                     "text-align": "centered",
                      "margin": "0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"color": "#FFFFFF", "background-color": "#090a47"},
+        "nav-link-selected": {"color": "#FFFFFF",
+                              "background-color": "#090a47"},
     }
 )
 
 if selected == 'Home':
     st.write('List of available apps and sub apps.')
+    st.header('List of available apps and sub apps')
+    subhead_app_1 = '''
+    <style>
+    .subhead-item {
+        backgroundcolor: transparent;
+    }
+    .subhead-item:hover {
+        color: #2E6EF7;
+    }
+    </style>
+
+    <a style='display: inline; text-align: left; color: #31333F
+    ; text-decoration: none; '
+    href="/Sampling" target="_self">
+    <h3 class="subhead-item">
+    Sampling app
+    </h3>
+    </a>
+    '''
+    st.write(subhead_app_1, unsafe_allow_html=True)
+    st.latex(r'n = \frac{NZ^{2}pq}{e^{2}(N-1)+Z^{2}pq}')
+    app_1_topic = 'Description'
+    st.write(
+        f'''<div style="text-align: left; color: #31d1ff;">
+        {app_1_topic}</div>''',
+        unsafe_allow_html=True)
+    app_1_cap = f'''
+    You can use it directly as a calculator
+    or you can upload the Dataframe to obtain your sample size.
+    After that you can sample your Dataframe or
+    re-sample it if you like, and download it.
+    Futhermore, you can remove items from the sampled Dataframe
+    by selecting the columns that you are most interested to mantain
+    the structure, and the stores to be replaced.
+    The stores to be replaced can be uploaded too, if you want.
+    '''
+    st.caption(
+        f'''
+        <div style="text-align: justify;
+        margin-top: 5px;
+        ">{app_1_cap}</div>''',
+        unsafe_allow_html=True)
+    st.header('')
+
+    subhead_app_2 = '''
+    <style>
+    .subhead-item {
+        backgroundcolor: transparent;
+    }
+    .subhead-item:hover {
+        color: #2E6EF7;
+    }
+    </style>
+
+    <a style='display: inline; text-align: left; color: #31333F
+    ; text-decoration: none; '
+    href="/Replacing" target="_self">
+    <h3 class="subhead-item">
+    Replacing app
+    </h3>
+    </a>
+    '''
+    st.write(subhead_app_2, unsafe_allow_html=True)
+    app_2_topic = 'Description'
+    st.write(
+        f'''<div style="text-align: left; color: #31d1ff;">
+        {app_2_topic}</div>''',
+        unsafe_allow_html=True)
+    app_2_cap = f'''
+    By uploading a Master Dataframe and a Working Dataframe
+    you can remove items from the Working Dataframe
+    by selecting the columns that you are most interested in to mantain
+    the structure, and the items to be replaced with items from the
+    Mater Dataframe.
+    The items to be replaced can be uploaded too, if you want.
+    '''
+    st.caption(
+        f'''
+        <div style="text-align: justify;
+        margin-top: 5px;
+        ">{app_2_cap}</div>''',
+        unsafe_allow_html=True)
+    st.header('')
 
 if selected == 'Sampling':
     switch_page('Sampling')
@@ -67,22 +152,18 @@ color: #808080;  /* theme's text color at 75 percent brightness*/
 background-color: transparent;
 text-decoration: none;
 }
-
 a:hover,  a:active {
 color: #0283C3; /* theme's primary color*/
 background-color: transparent;
 text-decoration: underline;
 }
-
 #page-container {
   position: relative;
   min-height: 10vh;
 }
-
 footer{
     visibility:hidden;
 }
-
 .footer {
 position: relative;
 left: 0;
@@ -94,15 +175,15 @@ color: #BFBFBF; /* theme's text color at 50 percent brightness*/
 text-align: left; /* 'left', 'center' or 'right' if you want*/
 }
 </style>
-
 <div id="page-container">
-
 <div class="footer">
-<p style='font-size: 0.875em;'>Developed by <a style='display: inline; text-align:
-left;' href="https://github.com/sape94" target="_blank"><img src="https://i.postimg.cc/vBnHmZfF/innovation-logo.png"
-alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team.</br></a></p>
+<p style='font-size: 0.875em;'>Developed by <a style='display: inline;
+text-align:
+left;' href="https://github.com/sape94" target="_blank">
+<img src="https://i.postimg.cc/vBnHmZfF/innovation-logo.png"
+alt="AI" height= "20"/><br>LatAm's Automation & Innovation Team.
+</br></a></p>
 </div>
-
 </div>
 """
 st.write(ft, unsafe_allow_html=True)
