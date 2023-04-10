@@ -46,7 +46,6 @@ selected = option_menu(
 )
 
 if selected == 'Home':
-    st.write('List of available apps and sub apps.')
     st.header('List of available apps and sub apps')
     subhead_app_1 = '''
     <style>
