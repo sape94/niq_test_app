@@ -22,6 +22,10 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
+image = Image.open('images_main/NIQ_banner.png')
+
+st.image(image, use_column_width='always', output_format='PNG')
+
 selected = option_menu(
     menu_title=None,
     options=['Home', 'Sampling', 'Feasibilities', 'Maps', 'More'],
@@ -40,9 +44,7 @@ selected = option_menu(
     }
 )
 
-image = Image.open('images_main/NIQ_banner.png')
 
-st.image(image, use_column_width='always', output_format='PNG')
 
 if selected == 'Home':
     switch_page('NIQ prototype')
@@ -64,6 +66,45 @@ if selected == 'More':
     #    page_icon=":bar_chart:",
     #    layout="wide"
     # )
+    subhead_app_2 = '''
+    <style>
+    .subhead-item {
+        backgroundcolor: transparent;
+    }
+    .subhead-item:hover {
+        color: #2E6EF7;
+    }
+    </style>
+
+    <a style='display: inline; text-align: left; color: #31333F
+    ; text-decoration: none; '
+    href="/Replacing" target="_self">
+    <h3 class="subhead-item">
+    Replacing app
+    </h3>
+    </a>
+    '''
+    st.write(subhead_app_2, unsafe_allow_html=True)
+    app_2_topic = 'Description'
+    st.write(
+        f'''<div style="text-align: left; color: #31d1ff;">
+        {app_2_topic}</div>''',
+        unsafe_allow_html=True)
+    app_2_cap = f'''
+    By uploading a Master Dataframe and a Working Dataframe
+    you can remove items from the Working Dataframe
+    by selecting the columns that you are most interested in to mantain
+    the structure, and the items to be replaced with items from the
+    Mater Dataframe.
+    The items to be replaced can be uploaded too, if you want.
+    '''
+    st.caption(
+        f'''
+        <div style="text-align: justify;
+        margin-top: 5px;
+        ">{app_2_cap}</div>''',
+        unsafe_allow_html=True)
+    st.header('')
 
     @st.cache
     def get_data_from_excel():
