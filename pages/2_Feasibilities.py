@@ -51,7 +51,7 @@ if selected == 'Sampling':
     switch_page('Sampling')
 
 if selected == 'Feasibilities':
-    st.write('List of available feasibilities subapps.')
+    st.write('This app will be deployed soon.')
 
 if selected == 'Maps':
     switch_page('Maps')
