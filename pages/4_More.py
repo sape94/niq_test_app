@@ -105,6 +105,7 @@ if selected == 'More':
         ">{app_2_cap}</div>''',
         unsafe_allow_html=True)
     st.header('')
+    st.header('')
 
     @st.cache
     def get_data_from_excel():
