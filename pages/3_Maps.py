@@ -54,7 +54,7 @@ if selected == 'Feasibilities':
     switch_page('Feasibilities')
 
 if selected == 'Maps':
-    st.write('List of available maps subapps.')
+    st.write('This app will be deployed soon.')
 
 if selected == 'More':
     switch_page('More')
