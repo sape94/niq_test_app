@@ -128,6 +128,41 @@ if selected == 'Home':
         margin-top: 5px;
         ">{app_2_cap}</div>''',
         unsafe_allow_html=True)
+    
+    subhead_app_3 = '''
+    <style>
+    .subhead-item {
+        backgroundcolor: transparent;
+    }
+    .subhead-item:hover {
+        color: #2E6EF7;
+    }
+    </style>
+
+    <a style='display: inline; text-align: left; color: #31333F
+    ; text-decoration: none; '
+    href="/Number_of_stores" target="_self">
+    <h3 class="subhead-item">
+    Number of stores by criteria
+    </h3>
+    </a>
+    '''
+    st.write(subhead_app_3, unsafe_allow_html=True)
+    app_3_topic = 'Description'
+    st.write(
+        f'''<div style="text-align: left; color: #31d1ff;">
+        {app_3_topic}</div>''',
+        unsafe_allow_html=True)
+    app_3_cap = f'''
+    Find the number of stores by <b>Country</b>, <b>Department</b>, <b>County</b>, <b>Kind of store</b>, and more.
+    You can select more that one filter per field.
+    '''
+    st.caption(
+        f'''
+        <div style="text-align: justify;
+        margin-top: 5px;
+        ">{app_3_cap}</div>''',
+        unsafe_allow_html=True)
     st.header('')
 
 if selected == 'Sampling':
