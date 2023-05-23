@@ -12,7 +12,10 @@ class DataFrameReplacer:
         unused_rows = [item for item in original_rows
                        if item not in used_rows]
         ws_df = o_df.filter(items=unused_rows, axis=0)
-        ws_df = ws_df.sort_values(by=sort_col, ascending=False)
+        if sort_col == '':
+            ws_df = ws_df
+        else:
+            ws_df = ws_df.sort_values(by=sort_col, ascending=False)
 
         self.fulldf = fulldf
         self.fracdf = fracdf
